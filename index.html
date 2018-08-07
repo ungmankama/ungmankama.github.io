@@ -1,99 +1,223 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Landing page</title>
-<link rel="stylesheet" href="style.css">
-  <script src="timer.js"></script>
+	<title>la Germano </title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<style type="text/css">
+	body{
+		padding: 0;
+		margin: 0;
+		height:100vh;
+		background-size: 100% ;
+	}
+
+#menu{
+	position: fixed;
+	z-index: 1;
+	height: 15vh;
+	width:100%;
+	background: linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0));
+	/*background-color: white;*/
+	color:white;
+	font-family: "Courier New";
+	font-variant: small-caps;
+	font-size: 2.5vmax;
+    display:table;
+ 
+ 	 color: white;
+
+}
+
+
+.menu_logo	
+{
+padding-top: 3vmin;
+z-index: 2;
+margin:0;
+font-size: 4vmax;
+display:table-cell;
+text-align: right;
+}
+
+
+
+
+.menu	
+{
+margin:0;	
+padding-top: 3vmin;
+z-index: 2;
+
+font-size: 2.5vmax;
+display:table-cell;
+text-align: right;
+padding-right:1vmin; 
+
+}
+
+.dotted
+{
+background-image: url("img/dot.png");
+width:100%;
+height: 100%;
+}
+.right
+{
+	position:absolute;
+	top:70vh;
+	left:50vw;
+	width:50vw;
+}
+.text_field
+{
+
+/*text-align:right;*/
+color:white;
+ margin-left: auto;
+ margin-right: 0;
+ max-width: 30vw;
+word-wrap:break-word;
+font-family: "Courier New";
+font-variant: small-caps;
+font-size: 5vmin;
+
+}
+img {
+	width:2.5vmax;
+}
+</style>
 </head>
-
-
 <body>
-	<header class="header"> 
-			 <div class ="logo"></div>
-			 <a href="#home" id="header_text" style="margin-left:20vw">HEADER 1</a> 
-			 <a href="#slide2" id="header_text" >HEADER 2 </a> 
-			 <a href="#slide3"id="header_text">HEADER 3</a>
-			 <a href=""id="header_text">HEADER 4</a>
-	 </header>
-	 
 
-	 
-	 <a name="home"></a>
-	 <div class="slide1">
-	 
-	 <div id="text_action_to_buy1">
-		Пошел ты нахуй черт, на, держи краба.
-	 </div>
-	 
-	 
-	 
-	 <br/>
-				   <form method="post" id="form">
-						Ваше имя: <input type="text" name="name" placeholder="Кама" style="height:3vh"><br/>
-						Email: <input type="email" name="email" placeholder="ganst01@gun.ru" style="height:3vh"><br/>
-				
-						<input type="submit" value="ШААА!  КЬЯЯЯЯ!" id="button_slide1">
-					</form>
-	 </div>
+<script type="text/javascript">
+	var wid=0;
+	var heg=0;
+	var arr_hw=[
+[800,600,1],
+[1024,768,1],
+[1280,1024,2],
+[1366,768,4],
+[1440,900,3],
+[1600,1200,1],
+[1600,900,4],
+[1680,1050,3],
+[1920,1080,4],
+[1920,1200,3],
+[1920,1920,3],
+[2560,1080,5],
+[2560,1440,4],
+[2560,1600,3],
+[3440,1440,5],
+[3840,1080,7],
+[3840,1600,6],
+[3840,2160,4],
+[4096,2160,4],
+[4096,2304,4],
+[5120,2880,4],
+	];
+var arr_text=[
+"Более <br> 1000 сотрудников!",
+"384 <br> единицы техники",
+"С нами сотрудничают <br/> 	ГАЗПРОМ и ЛУКОЙЛ"
+];
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
 
-	 <div class="slide2">
-	  <a name="slide2"></a>
-	<!-- <div id="header2">  "Я сделаю больно - 5 секунд. По справедливости"  <br/> <a style="text-align:right">Кама Пуля </a></div> -->
+var nr=1;
+
+setInterval(function() {
+
+changeback();
+ }, 3000);
+var text=0;
+function changeback()
+{
+	nr++;
+	if (nr>3)
+	{
+		nr=1
+	}
+	var path='img/'+num+'/cosmos'+nr+'.jpg ';
+	var img=new Image();
+	img.src=path;
+
+	img.onload=function ()
+		{
+		bd=document.getElementsByTagName('body');
+		bd[0].style.backgroundImage = 'url(' +img.src +')';
+		var temp=document.getElementsByClassName("text_field");
+		text++;
+		if (text>arr_text.length-1)
+		{
+			text=0;
+		}
+		temp[0].innerHTML = arr_text[text];
+		
+		}
+}
+
+window.onload=function(){
+
+		//wid=screen.width;
+		//heg=screen.height;
+		wid=2560;
+		heg=1080;
+
+	for(i=0;arr_hw.length;i++)
+	{
+		if (arr_hw[i][0]==wid)
+			if(arr_hw[i][1]==heg)
+			{
+				num=arr_hw[i][2];
+				break;
+			}
+	}
+
+	var path='img/'+num+'/cosmos'+1+'.jpg ';
+	var img=new Image();
+	img.src=path;
+	bd=document.getElementsByTagName('body');
+	img.onload=function ()
+	{
+		bd=document.getElementsByTagName('body');
+		bd[0].style.backgroundImage = 'url(' +img.src +')';
+		var temp=document.getElementsByClassName("text_field");
+		temp[0].innerHTML = arr_text[text];
+	}
 	
 	
-	 
-		
-	 <div id="wtext_rigth"> 
-		<div id="green_circle"></div>&nbsp;&nbsp;&nbsp;Я всегда свободен в действии, не только в словах
-		<br/> 
-		<div id="green_circle"></div>&nbsp;&nbsp;&nbsp;Я тебе скажу: безделье -это игрушка дьявола<br/>
-		<div id="green_circle"> </div> &nbsp;&nbsp;&nbsp;Нельзя недооценивать противника ежжи
-		<br/>
-		<br/>
-		<center> 
-		 <div id="call_action2"> Успей записаться на курсы!</div>
-			 
-			 <a id="timer"></a><center>
-			 <script>
-			  updateTimer();
-			var timeinterval = setInterval(updateTimer,1000);
-			 </script>
-		
-		
-		</div> 
-	 <br/> 
+
+	//bd[0].style.backgroundImage = "url('')";
+	// bd[0].style.backgroundImage = "url("+path+")";
+	// bd[0].style.backgroundRepeat = "no-repeat";
+	// bd[0].style.backgroundSize = "100% 100%"
+
+	}
+
+
+
+function showmenu()
+{
+
+}
 	
-		
-	 </div>
-	 
-	 <div class="slide3">
-	 <a name="slide3"></a>
-	 <a id="header3">ВЫ НАМ НЕ ВЕРЕТЕ? УБЕДИТЕСЬ САМИ!</a>
-	 <div id="video">Как вам это?
-	 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/keCaO5Yj23Q" frameborder="0" allowfullscreen></iframe>
+</script>
+<div id="menu">
+	<div class="menu_logo">Рога и копыта</div>
+	<div class="menu"> Описание</div>
+	<div class="menu"> Наши заказчики</div>
+	<div class="menu"> Партнеры</div>
+	<div class="menu"> <img src="img/social media/029-instagram.png"></div>
+	<div class="menu"> <img src="img/social media/036-facebook.png"></div>
+	<div class="menu"> <img src="img/social media/008-twitter.png"></div>
 
 </div>
-	 <div id="video1">А вот это?
-	<iframe width="100%" height="100%" src="https://www.youtube.com/embed/DXbqsjY2u_0" frameborder="0" allowfullscreen></iframe>
-
+<div class="right">
+	<div class="text_field"></div>
 </div>
-	 <div id="video2">Или даже это?
-	<iframe width="100%" height="100%" src="https://www.youtube.com/embed/z7qiI4TkoZI" frameborder="0" allowfullscreen></iframe>
-
-</div>
- <div class="form">
-	   <form method="post" id="form1">
-	   <a style="font-size:5vh">ТЕПЕРЬ УБЕДИЛИСЬ?!</a><br/><br/>	
-						Ваше имя: <input type="text" name="name" placeholder="Кама" style="height:3vh"><br/>
-						Email: <input type="email" name="email" placeholder="ganst01@gun.ru" style="height:3vh"><br/>
-				
-						<input type="submit" value="ШААА!  КЬЯЯЯЯ!" id="button_slide1">
-					</form>
-
-</div>
-
-	 </div>
-	 
+<div class="dotted"></div>
+<!-- https://www.flaticon.com/authors/freepik -->
 </body>
 </html>
+
