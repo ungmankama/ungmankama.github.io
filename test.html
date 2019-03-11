@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+</head>
+<body>
+
+  <div class="single-item">
+    <div>your content1</div>
+    <div>your content2</div>
+    <div>your content3</div>
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src='js/slick.min.js'></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.single-item').slick(
+      {
+      	arrows:false,
+      	centerMode:true
+      }
+      );
+    });
+  </script>
+</body>
+</html>

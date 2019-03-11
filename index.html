@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>НСК</title>
+	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet"> -->
+
+	<!-- <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&amp;subset=cyrillic" rel="stylesheet">
+
+<!-- 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> -->
+	<link rel="stylesheet" type="text/css" href="css/main_css.css">
+	<link rel="stylesheet" type="text/css" href="css/slider.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+
+	<!-- <link rel="stylesheet" type="text/css" href="css/gost_type_a.css"> -->
+</head>
+<body>
+	<header class='menu'>
+  <ul class="topmenu">
+    <li><a href="#">Главная</a></li>
+    <li><a href="#">Проекты</a></li>
+    <li><a href="#">Партнеры</i></a>
+      <ul class="submenu">
+        <li><a href="">1 партнер</a></li>
+        <li><a href="">2 партнер</a></li>
+      </ul>
+    </li>
+    <li><a href="#">О компании</a></li>
+    <li><a href="#">Контакты</a></li>
+  </ul>
+	</header>
+<div class='slider'>
+	<!-- <div class="slider_background"></div> -->
+	<div class='slides'>
+		<img src="img/1.jpg">
+			<div class='slide_text'>
+				<div class='slide_text_h'>Опыт поколений </div>
+				<span>Текст 1</span>
+		</div>
+	</div>
+
+	<div class='slides'>
+		<img src="img/2.jpg">
+		<div class='slide_text'>
+			<div class='slide_text_h'>Постройка зданий</div>
+			<span>Текст 2</span>
+		</div>
+	</div>
+
+	<div class='slides'>
+		<img src="img/3.jpg">
+				<div class='slide_text'>
+			<div class='slide_text_h'>Разработка ППР </div>
+			<span>Текст 3</span>
+		</div>
+	</div>
+
+</div>
+<!-- <div class='fade_in'>
+	<img src="img/3.jpg">
+</div>
+ -->
+<script src="js/slider.js">
+	
+</script>
+<script type="text/javascript">
+	var slider_main=new Slider(document.getElementsByClassName('slider')[0]);
+	slider_main.auto_play(3000);
+	// slider_main.create_dots(slider_main);
+</script>
+</body>
+</html>	
