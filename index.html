@@ -19,56 +19,98 @@
 </head>
 <body>
 	<header class='menu'>
-  <ul class="topmenu">
-    <li><a href="#">Главная</a></li>
-    <li><a href="#">Проекты</a></li>
-    <li><a href="#">Партнеры</i></a>
-      <ul class="submenu">
-        <li><a href="">1 партнер</a></li>
-        <li><a href="">2 партнер</a></li>
-      </ul>
-    </li>
-    <li><a href="#">О компании</a></li>
-    <li><a href="#">Контакты</a></li>
-  </ul>
+
+	<a href="#"><img src='img/logo1.png' id='logo'></a>
+	
+	<ul class='header_menu'>
+		<li>
+			<a href='#'>Menu 1</a>
+			<ul class='submenu'>
+				<li><a href='#'>Submenu 11</a></li>
+				<li><a href='#'>Submenu 12</a></li>
+				<li><a href='#'>Submenu 13</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href='#'>Menu 2</a>
+			<ul class='submenu'>
+				<li><a href='#'>Submenu 21</a></li>
+				<li><a href='#'>Submenu 22</a></li>
+				<li><a href='#'>Submenu 23</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href='#'>Menu 3</a>
+			<ul class='submenu'>
+				<li><a href='#'>Submenu 31</a></li>
+				<li><a href='#'>Submenu 32</a></li>
+				<li><a href='#'>Submenu 33</a></li>
+			</ul>
+		</li>	
+		<li>
+			<a href='#'>Menu 4</a>
+			<ul class='submenu'>
+				<li><a href='#'>Submenu 41</a></li>
+				<li><a href='#'>Submenu 42</a></li>
+				<li><a href='#'>Submenu 43</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href='#'>Menu 5</a>
+			<ul class='submenu'>
+				<li><a href='#'>Submenu 51</a></li>
+				<li><a href='#'>Submenu 52</a></li>
+				<li><a href='#'>Submenu 53</a></li>
+			</ul>
+		</li>
+	</ul>	
 	</header>
+	
 <div class='slider'>
-	<!-- <div class="slider_background"></div> -->
 	<div class='slides'>
 		<img src="img/1.jpg">
 			<div class='slide_text'>
-				<div class='slide_text_h'>Опыт поколений </div>
-				<span>Текст 1</span>
+				<div class='slide_text_h'>Header 1</div>
+				<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt, ex eget posuere lobortis, mauris libero imperdiet dui, in aliquam enim erat in augue. Nam a ligula lectus. Nulla nec.</span>
 		</div>
 	</div>
-
 	<div class='slides'>
 		<img src="img/2.jpg">
 		<div class='slide_text'>
-			<div class='slide_text_h'>Постройка зданий</div>
-			<span>Текст 2</span>
+			<div class='slide_text_h'>Header 2</div>
+			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt, ex eget posuere lobortis, mauris libero imperdiet dui, in aliquam enim erat in augue. Nam a ligula lectus. Nulla nec.</span>
+		</div>
+	</div>
+	<div class='slides'>
+		<img src="img/3.jpg">
+				<div class='slide_text'>
+			<div class='slide_text_h'>Header 3</div>
+			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt, ex eget posuere lobortis, mauris libero imperdiet dui, in aliquam enim erat in augue. Nam a ligula lectus. Nulla nec.</span>
+		</div>
+	</div>
+	<div class='slides'>
+		<img src="img/4.jpg">
+				<div class='slide_text'>
+			<div class='slide_text_h'>Header 4</div>
+			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt, ex eget posuere lobortis, mauris libero imperdiet dui, in aliquam enim erat in augue. Nam a ligula lectus. Nulla nec.</span>
 		</div>
 	</div>
 
 	<div class='slides'>
-		<img src="img/3.jpg">
+		<img src="img/5.jpg">
 				<div class='slide_text'>
-			<div class='slide_text_h'>Разработка ППР </div>
-			<span>Текст 3</span>
+			<div class='slide_text_h'>Header 5</div>
+			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt, ex eget posuere lobortis, mauris libero imperdiet dui, in aliquam enim erat in augue. Nam a ligula lectus. Nulla nec.</span>
 		</div>
 	</div>
+</div>
 
-</div>
-<!-- <div class='fade_in'>
-	<img src="img/3.jpg">
-</div>
- -->
 <script src="js/slider.js">
 	
 </script>
 <script type="text/javascript">
 	var slider_main=new Slider(document.getElementsByClassName('slider')[0]);
-	slider_main.auto_play(3000);
+	slider_main.auto_play(5000);
 	// slider_main.create_dots(slider_main);
 </script>
 </body>

@@ -32,7 +32,7 @@
     background-color: rgba(0,0,0,0.6);
     /*background: #000205;*/
     color: white;
-    max-width: 30%;
+    max-width: 50%;
     font-size: 4rem;
     /*padding-left:5rem;*/
     z-index: 11;
@@ -43,7 +43,7 @@
     transform:translateY(-50%);
     word-wrap:break-word;
     z-index:4;
-    font-weight: 400;
+    font-weight: 300;
 
   }
    .slide_text span
@@ -54,8 +54,9 @@
   {
     font-size: 5rem;
     /*text-decoration: underline;*/
+    text-align: center;
     margin-bottom: 1rem;
-    font-weight: 300;
+    font-weight: 400 ;
   }
   .slider .slides img
   { 
@@ -73,7 +74,7 @@
     transform: translate(-50%,-100%);
     left:50%;
     /*background: rgba(0,0,0,0.5);*/
-    /*background: white;*/
+    background: white;
     padding: 0.5vh 0.5vh;
     z-index: 6;
     border-radius: 2vmax; 
@@ -85,8 +86,8 @@
   }
   .dots
   {
-    width: 1vmax;
-    height:1vmax;
+    width: 2vmax;
+    height:2vmax;
     background: white;
     border-radius: 50%;
     margin-left:1vmin;
@@ -103,7 +104,7 @@
   .dots_active
   {
     background: black;
-    border:2px solid white;
+    /*border:2px solid white;*/
 
   }
   .active_slide
