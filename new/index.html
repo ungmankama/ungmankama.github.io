@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Новая Строительная Компания 1</title>
+
+	<!-- css style -->
+		<!-- Font awesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<!-- main style -->
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<!-- header menu css -->
+		<link rel="stylesheet" type="text/css" href="css/header.css">
+		<!-- slider css -->
+		<link rel="stylesheet" type="text/css" href="css/slider.css">
+
+</head>
+
+<body>
+
+	<header>
+		<div class='menu'>	
+			<a href="#"><img src='img/logo1.png' id='logo'></a>
+			
+			<ul class='header_menu'>
+				<li>
+					<a href='#'>О компании <i class="fas fa-caret-down"></i></a>
+					<ul class='submenu'>
+						<li><a href='#'> О компании</a></li>
+						<li><a href='#'>История</a></li>
+						<li><a href='#'>Сотрудники</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href='#'>Деятельность <i class="fas fa-caret-down"></i></a>
+					<ul class='submenu'>
+						<li><a href='#'>Частная стройка</a></li>
+						<li><a href='#'>Коммерческая стройка</a></li>
+						
+					</ul>
+				</li>
+				<li>
+					<a href='#'>Объекты <i class="fas fa-caret-down"></i></a>
+					<ul class='submenu'>
+						<li><a href='#'>Частная стройка</a></li>
+						<li><a href='#'>Коммерческая стройка</a></li>
+						
+					</ul>
+				</li>	
+				<li>
+					<a href='#'>Вакансии</a>
+				</li>
+				<li>
+					<a href='#'>Контакты</a>
+				</li>
+			</ul>	
+		</div>
+	</header>
+
+	<section class='first_section'>
+
+	<div class='slider'>
+			
+		<div class='slides'>
+			<div class='blur_blue'></div>
+			<img src="img/1.jpg">
+				<div class='slide_text'>
+					<div class='slide_text_h'>Header 1</div>
+					<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt, ex eget posuere lobortis, mauris libero imperdiet dui, in aliquam enim erat in augue. Nam a ligula lectus. Nulla nec.</span>
+			</div>
+		</div>
+		<div class='slides'>
+			<div class='blur_blue'></div>
+			<img src="img/2.jpg">
+			<div class='slide_text'>
+				<div class='slide_text_h'>Header 2</div>
+				<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt, ex eget posuere lobortis, mauris libero imperdiet dui, in aliquam enim erat in augue. Nam a ligula lectus. Nulla nec.</span>
+			</div>
+		</div>
+		<div class='slides'>
+			<div class='blur_blue'></div>
+			<img src="img/3.jpg">
+				<div class='slide_text'>
+				<div class='slide_text_h'>Header 3</div>
+				<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt, ex eget posuere lobortis, mauris libero imperdiet dui, in aliquam enim erat in augue. Nam a ligula lectus. Nulla nec.</span>
+			</div>
+		</div>
+		<div class='slides'>
+			<div class='blur_blue'></div>
+			<img src="img/4.jpg">
+					<div class='slide_text'>
+				<div class='slide_text_h'>Header 4</div>
+				<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt, ex eget posuere lobortis, mauris libero imperdiet dui, in aliquam enim erat in augue. Nam a ligula lectus. Nulla nec.</span>
+			</div>
+		</div>
+
+		<div class='slides'>
+			<div class='blur_blue'></div>
+			<img src="img/5.jpg">
+					<div class='slide_text'>
+				<div class='slide_text_h'>Header 5</div>
+				<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt, ex eget posuere lobortis, mauris libero imperdiet dui, in aliquam enim erat in augue. Nam a ligula lectus. Nulla nec.</span>
+			</div>
+		</div>
+	</div>
+
+
+	</section>
+
+	<script src="js/slider.js"></script>
+	<script type="text/javascript">
+		var slider_main=new Slider(document.getElementsByClassName('slider')[0]);
+		slider_main.auto_play(5000);
+	</script>
+</body>
+
+</html>

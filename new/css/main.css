@@ -1,0 +1,30 @@
+html
+{
+	/*font-family: 'Lobster', cursive;*/
+	/*font-family: 'Oswald', sans-serif;*/
+	/*font-family: 'gost type A', arial !important;*/
+	font-family: 'Roboto', sans-serif;
+	font-size: 1vmin;
+	font-weight: normal;
+}
+body
+{
+	padding:0;
+	margin: 0;
+	background: #d4cfc9;
+}
+section
+{	
+	position: absolute;
+	top: 10vh;
+	left: calc((100vw - 1280px)/2);
+	width: 1280px;
+	height: 90vh;
+	/*margin:0 auto;*/
+	background: #eeece7;
+	outline: 2px solid #d2cec9;
+}
+.first_section
+{
+	background: #132234;
+}
