@@ -25,6 +25,8 @@ function Slider(slider,dots=true)
 		console.log('timer id ( auto play) = '+ this.timerId);
 	}
 
+
+
 	this.auto_play_change_slide=function(anim_time)
 	{	
 		var that=this;
@@ -41,7 +43,7 @@ function Slider(slider,dots=true)
 			var old_src=slides_active[i].getElementsByTagName('img')[0].src.split('/');
 			old_src=old_src[old_src.length-1].split('.')[0];
 			slides_active[i].getElementsByTagName('img')[0].src='img/'+old_src+'.jpg';
-			slides_active[i].getElementsByTagName('img')[0].style.animation='';
+			slides_active[i].getElementsByClassName('slide_text')[0].style.animation='';
 			slides_active[i].className='slides non_active_slide';
 	
 		}
@@ -50,7 +52,8 @@ function Slider(slider,dots=true)
 		var old_src=this.slider.getElementsByClassName('slides')[this.current_slide].getElementsByTagName('img')[0].src.split('/');
 		old_src=old_src[old_src.length-1].split('.')[0];
 		this.slider.getElementsByClassName('slides')[this.current_slide].getElementsByTagName('img')[0].src='img/'+old_src+'.jpg';
-		this.slider.getElementsByClassName('slides')[this.current_slide].getElementsByTagName('img')[0].style.animation='fade '+anim_time/1000+'s';
+		// this.slider.getElementsByClassName('slides')[this.current_slide].style.animation='fade '+anim_time/1000+'s';
+		this.slider.getElementsByClassName('slides')[this.current_slide].getElementsByClassName('slide_text')[0].style.animation='text_anim '+anim_time/1000+'s';
 
 		// console.log(slider.current_slide,old_src);
 		

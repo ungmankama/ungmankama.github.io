@@ -42,13 +42,14 @@ ul
 
 .header_menu>li 
 {
-	display: inline-block;
+	/*display: inline-block;*/
 	width: 20%;
 	text-align: center;
 	padding:calc((10rem - 3rem)/2)  0;
 	position: relative;
+	display: table-cell;
 
-	
+	width: 1%;
 }
 header a
 {
@@ -105,3 +106,10 @@ header a:visited
 	color: #4b473d;
 
 }
+
+.active_anchor
+{
+	text-decoration: underline;
+	text-decoration-color: red;
+}
+
