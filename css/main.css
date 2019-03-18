@@ -308,17 +308,14 @@ section
 	display: inline-block;
 	float: left;
 }
-.s_contact_container_map
+#s_contact_container_map
 {
 	display: inline-block;
 	width: 60%;
+	height: 60rem;
 	margin: 3rem 5% 0 5%;
 }
-.s_contact_container_map img
-{
-	width: 100%;
-	outline: 1px solid #eeeee7;
-}
+
 .s_contact_container_text table
 {
 	vertical-align: top;
