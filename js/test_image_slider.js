@@ -282,11 +282,11 @@ class SliderPhotoProject
 		console.log(ind1);
 		console.log(ind2);
 		var img_temp=document.createElement('img');
-		img_temp.src=this.sliderPhotoProject[ind1][0].src;
+		img_temp.src=this.sliderPhotoProject[ind2][0].src;
 		nt_ph.appendChild(img_temp);
 
 		var img_temp=document.createElement('img');
-		img_temp.src=this.sliderPhotoProject[ind2][0].src;
+		img_temp.src=this.sliderPhotoProject[ind1][0].src;
 		pr_ph.appendChild(img_temp);	
 
 		// var ind_cur_sl=[this.currentProject,this.currentProject+]
