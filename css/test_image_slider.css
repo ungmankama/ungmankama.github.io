@@ -105,7 +105,7 @@ section
 {
 	position: absolute;
 	top:50%;
-	left: 85%;
+	right:  15%;
 	width: 4rem;
 	height: 4rem;
 	transform: translateY(-50%);
