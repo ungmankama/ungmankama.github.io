@@ -16,6 +16,9 @@
         <link rel="stylesheet" type="text/css" href="css/header.css">
         <!-- slider css -->
         <link rel="stylesheet" type="text/css" href="css/slider.css">
+        <!-- slider photo -->
+        <link rel="stylesheet" type="text/css" href="css/test_image_slider.css">
+ 
 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A27c7adfeed37c6e412de76099046c331e1a8d72d8f75ebfd21e6a51576c3144a&amp;id=s_contact_container_map"></script>
 </head>
 
@@ -147,7 +150,35 @@
 
 
     <section id='section_project' >
-        coming soon
+    <div class='section_project_header'> Наши проекты</div>
+        <div id='sliderProject'>
+      
+      <div class="Project">
+        <img src='img/sl_1/1.jpg' alt="Mountain">
+        <img src='img/sl_1/2.jpg' alt="Waterfall">
+        <img src='img/sl_1/3.jpg' alt="War">
+        <img src='img/sl_1/4.jpg' alt="Town">
+        <img src='img/sl_1/5.jpg' alt="Black hole">
+      </div>
+      
+      <div class="Project">
+        <img src='img/sl_1/4.jpg' alt="Town">
+        <img src='img/sl_1/1.jpg' alt="Mountain">
+        <img src='img/sl_1/2.jpg' alt="Waterfall">
+        <img src='img/sl_1/3.jpg' alt="War">
+        
+        <img src='img/sl_1/5.jpg' alt="Black hole">
+      </div>
+
+      <div class="Project">
+        <img src='img/sl_1/5.jpg' alt="Black hole">
+        <img src='img/sl_1/1.jpg' alt="Mountain">
+        <img src='img/sl_1/2.jpg' alt="Waterfall">
+        <img src='img/sl_1/3.jpg' alt="War">
+        <img src='img/sl_1/4.jpg' alt="Town">
+        
+      </div>
+    </div>
     </section>
 
         <section id='section_partner' >
@@ -246,6 +277,7 @@
     <script src="js/jQuery.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/main.js"></script>
+      <script src="js/test_image_slider.js"></script>
     <script type="text/javascript">
         var slider_main=new Slider(document.getElementsByClassName('slider')[0]);
         slider_main.auto_play(5000);
