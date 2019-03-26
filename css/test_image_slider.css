@@ -10,19 +10,40 @@ html
 	color:#646360;
 	font-weight: 400;
 }
-section
+body
 {
-	/*width: 1280px;*/
-	margin: 5rem calc((100vw - 1280px)/2);
+	padding:0;
+	margin: 0;
+	background: #d4cfc9;
+
+}
+section
+{	
+
+	margin: 0 calc((100vw - 1280px)/2);
 	width: 1280px;
 	
 	/*margin:0 auto;*/
 	background: #eeece7;
 	display: block;
-	height: 90vh;
-	
+	/*outline: 2px solid #d2cec9;*/
 }
+#section_project
+{
+	
+	height: calc(100vh - 10rem);
+	/*border-bottom: 1px solid #d9d5d0;*/
+}
+.section_project_header
+{
+	width: 100%;
+	text-align: center;
+	font-size: 4rem;
+	padding-top: 2rem;
+	font-weight: 300;
+	color:black;
 
+}
 .class_header
 {
 	width: 100%;
@@ -57,6 +78,7 @@ section
 	font-size: 0;
 	position: relative;
 	transform: translateY(15px);
+	overflow: hidden;	
 }
 
 .pr_ph, .nt_ph
@@ -118,9 +140,6 @@ section
 	line-height:4rem;
 	/*font-family: "FontAwesome";*/
 }
-
-
-
 
 
 .main_photo_slider .main_photo

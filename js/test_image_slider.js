@@ -128,7 +128,7 @@ class SliderPhotoProject
 		}, false);
 
 		nt_ph_a.addEventListener("click", function(event) {
-		  
+		  	
 		  	self.change_slide(1);  
 
 		}, false);
@@ -209,9 +209,6 @@ class SliderPhotoProject
 
 		var img_current=event.getAttribute('value');
 		main_photo.getElementsByTagName('img')[0].src=img_current;
-		// delete_all_child(alt_photo_span);
-		// img_current.spit('/')[img_current.spit('/').length-1].split('.')[0];
-		// alt_photo_span.appendChild(document.createTextNode(arr_text[event.getAttribute('data')]));
 		event.className='other_photo_img_cont active_oth';
 
 	}

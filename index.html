@@ -57,53 +57,49 @@
 
     <section id='section_main'>
         <div class='s_main_info_block'> Проектирование и строительство</div>
-    <div class='slider'>
+
+          <div class="container">
+
+            <div class="panel">
+              <div class='blur_blue'></div>
+              <img src="img/1.jpg">
+              <div class='text_block'>
+                <div class='header_textblock'>Строительство коммерческих объектов</div>
+                <span>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt, ex eget posuere lobortis, mauris libero imperdiet dui, in aliquam enim erat in augue. Nam a ligula lectus. Nulla nec.
+                </span>
+              </div>
+            </div>
+
+            <div class="panel">
+              <div class='blur_blue'></div>
+              <img src="img/2.jpg">
+              <div class='text_block'>
+                <div class='header_textblock'>Частное строительство</div>
+                <span>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt, ex eget posuere lobortis, mauris libero imperdiet dui, in aliquam enim erat in augue. Nam a ligula lectus. Nulla nec.
+                </span>
+              </div>
+            </div>
+
+            <div class="panel">
+              <div class='blur_blue'></div>
+              <img src="img/3.jpg">
+              <div class='text_block'>
+                <div class='header_textblock'>Реконструкция складских помещений</div>
+                <span>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt, ex eget posuere lobortis, mauris libero imperdiet dui, in aliquam enim erat in augue. Nam a ligula lectus. Nulla nec.
+                </span>
+              </div>
+            </div>
+
             
-        <div class='slides'>
-            <div class='blur_blue'></div>
-            <img src="img/1.jpg">
-                <div class='slide_text'>
-                    <div class='slide_text_h'>Строительство коммерческих объектов</div>
-                    <span>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt, ex eget posuere lobortis, mauris libero imperdiet dui, in aliquam enim erat in augue. Nam a ligula lectus. Nulla nec.
-                    </span>
-            </div>
-        </div>
-        <div class='slides'>
-            <div class='blur_blue'></div>
-            <img src="img/2.jpg">
-            <div class='slide_text'>
-                <div class='slide_text_h'>Частное строительство</div>
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt, ex eget posuere lobortis, mauris libero imperdiet dui, in aliquam enim erat in augue. Nam a ligula lectus. Nulla nec.</span>
-            </div>
-        </div>
-        <div class='slides'>
-            <div class='blur_blue'></div>
-            <img src="img/3.jpg">
-                <div class='slide_text'>
-                <div class='slide_text_h'>Реконструкция складских помещений</div>
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt, ex eget posuere lobortis, mauris libero imperdiet dui, in aliquam enim erat in augue. Nam a ligula lectus. Nulla nec.</span>
-            </div>
-        </div>
-<!--         <div class='slides'>
-            <div class='blur_blue'></div>
-            <img src="img/4.jpg">
-                    <div class='slide_text'>
-                <div class='slide_text_h'>Header 4</div>
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt, ex eget posuere lobortis, mauris libero imperdiet dui, in aliquam enim erat in augue. Nam a ligula lectus. Nulla nec.</span>
-            </div>
-        </div>
+          <div class="swipe">  
+          </div>
+              <button class="btn-prev" >&larr;</button>
+              <button class="btn-next">&rarr;</button>
 
-        <div class='slides'>
-            <div class='blur_blue'></div>
-            <img src="img/5.jpg">
-                    <div class='slide_text'>
-                <div class='slide_text_h'>Header 5</div>
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt, ex eget posuere lobortis, mauris libero imperdiet dui, in aliquam enim erat in augue. Nam a ligula lectus. Nulla nec.</span>
-            </div>
         </div>
-    </div> -->
-
 
     </section>
 
@@ -275,12 +271,19 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script> -->
     <script src="js/jQuery.js"></script>
-    <script src="js/slider.js"></script>
+    <!-- <script src="js/slider.js"></script> -->
+    <script src="js/Slider.js"></script>
     <script src="js/main.js"></script>
       <script src="js/test_image_slider.js"></script>
     <script type="text/javascript">
-        var slider_main=new Slider(document.getElementsByClassName('slider')[0]);
-        slider_main.auto_play(5000);
+        var sl;
+        window.onload = function()
+        {
+             sl=new SliderFullPage($('container')[0]);
+        }
+      
+        // var slider_main=new Slider(document.getElementsByClassName('slider')[0]);
+        // slider_main.auto_play(5000);
     </script>
 </body>
 
