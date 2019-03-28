@@ -60,7 +60,7 @@
 
           <div class="container">
 
-            <div class="panel">
+            <div class="slide">
               <div class='blur_blue'></div>
               <img src="img/1.jpg">
               <div class='text_block'>
@@ -71,7 +71,7 @@
               </div>
             </div>
 
-            <div class="panel">
+            <div class="slide">
               <div class='blur_blue'></div>
               <img src="img/2.jpg">
               <div class='text_block'>
@@ -82,7 +82,7 @@
               </div>
             </div>
 
-            <div class="panel">
+            <div class="slide">
               <div class='blur_blue'></div>
               <img src="img/3.jpg">
               <div class='text_block'>
@@ -96,8 +96,8 @@
             
           <div class="swipe">  
           </div>
-              <button class="btn-prev" >&larr;</button>
-              <button class="btn-next">&rarr;</button>
+              <button class="btn_prev" >&larr;</button>
+              <button class="btn_next">&rarr;</button>
 
         </div>
 
@@ -147,34 +147,44 @@
 
     <section id='section_project' >
     <div class='section_project_header'> Наши проекты</div>
-        <div id='sliderProject'>
-      
-      <div class="Project">
-        <img src='img/sl_1/1.jpg' alt="Mountain">
-        <img src='img/sl_1/2.jpg' alt="Waterfall">
-        <img src='img/sl_1/3.jpg' alt="War">
-        <img src='img/sl_1/4.jpg' alt="Town">
-        <img src='img/sl_1/5.jpg' alt="Black hole">
-      </div>
-      
-      <div class="Project">
-        
-        <img src='img/sl_2/1.jpg' alt="Mountain">
-        <img src='img/sl_2/2.jpg' alt="Waterfall">
-        <img src='img/sl_2/3.jpg' alt="War">
-        <img src='img/sl_2/4.jpg' alt="Town">
-        <img src='img/sl_2/5.jpg' alt="Black hole">
-      </div>
+    <div class="sliderPr_container">
+      <div class='swipe'></div>
+      <div class="sliderPr_container_content">
 
-      <div class="Project">
-        <img src='img/sl_3/1.jpg' alt="Black hole">
-        <img src='img/sl_3/2.jpg' alt="Mountain">
-        <img src='img/sl_3/3.jpg' alt="Waterfall">
-        <img src='img/sl_3/4.jpg' alt="War">
-        <img src='img/sl_3/5.jpg' alt="Town">
+        <div class="sliderPr_slide">
+          <img class="sliderPr_img" src="img/1.jpg" alt="1" />
+
+          <h1 class="sliderPr_img_title">
+          <div class='sliderPr_img_title_header'> Первый</div>
+          <div></div>
+          </h1>
+        </div>    
+
+        <div class="sliderPr_slide">
+          <img class="sliderPr_img" src="img/2.jpg" alt="2" />
+          <h1 class="sliderPr_img_title">Through the Mountains</h1>
+          </a>
+        </div>
+
+        <div class="sliderPr_slide">
+          <img class="sliderPr_img" src="img/3.jpg" alt="3" />
+          <h1 class="sliderPr_img_title">Through the Mountains</h1>
+        </div>
+
+        <div class="sliderPr_slide">
+          <img class="sliderPr_img" src="img/4.jpg" alt="3" />
+          <h1 class="sliderPr_img_title">Through the Mountains</h1>
+        </div>
+
+        <div class="sliderPr_slide">
+          <img class="sliderPr_img" src="img/5.jpg" alt="4" />
+          <h1 class="sliderPr_img_title">Through the Mountains</h1>
+        </div>
+
+        <a class="btn_left"><i class="fa fa-arrow-left"></i></a>
+        <a class="btn_right"><i class="fa fa-arrow-right"></i></a>
         
       </div>
-    </div>
     </section>
 
         <section id='section_partner' >
@@ -274,16 +284,15 @@
     <!-- <script src="js/slider.js"></script> -->
     <script src="js/slider.js"></script>
     <script src="js/main.js"></script>
-      <script src="js/test_image_slider.js"></script>
+      <!-- <script src="js/test_image_slider.js"></script> -->
     <script type="text/javascript">
         var sl;
-        window.onload = function()
-        {
-             sl=new SliderFullPage($('container')[0]);
-        }
-      
-        // var slider_main=new Slider(document.getElementsByClassName('slider')[0]);
-        // slider_main.auto_play(5000);
+        var sl2;
+        
+        sl=new SliderFullPage($('.container'));
+        sl2=new SliderProject($('.sliderPr_container'));
+
+
     </script>
 </body>
 

@@ -26,6 +26,7 @@ section
 	/*margin:0 auto;*/
 	background: #eeece7;
 	display: block;
+	overflow-x: hidden;
 	/*outline: 2px solid #d2cec9;*/
 
 }
@@ -44,6 +45,7 @@ section
 	position: relative;
 	
 }
+
 #section_project
 {
 	
